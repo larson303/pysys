@@ -10,7 +10,7 @@ all the shell utilities such as sed, grep, awk, etc.
 - FYI - If you laugh at the the thought of Perl, I dare you to find a faster way to rename a variable in all
   the subfolders from the cli than using the Perl one-liner: `perl -pi -e 's/samplefirm/newfirm/g'`
   which I would use to create new client projects from a project template and then recursively search and
-  replace the with the new client project name.
+  replace the sample firm with the new client project name.
 
 One of my earliest code commits after my .bashrc was a sample for adding scripting to my shell scripts,
 and it would just build.  As I moved from Operations to Development (but was also the Dev Server Admin) 
