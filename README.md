@@ -12,23 +12,28 @@ all the shell utilities such as sed, grep, awk, etc.
   which I would use to create new client projects from a project template and then recursively search and
   replace the sample firm with the new client project name.
 
-One of my earliest code commits after my .bashrc was a sample for adding scripting to my shell scripts,
-and it would just build.  As I moved from Operations to Development (but was also the Dev Server Admin) 
-I wanted to move to more mature solutions to problems, but time and deadlines seemed to make jumping in 
-with the familiar tool easier.  
+One of my earliest code commits after my .bashrc was a sample for adding logging to my shell scripts,
+and other small things over time.  As I moved from Operations to Development (but was also the Dev Server Admin) 
+I wanted to move to more mature solutions, but time and deadlines made it seem easier to jump in with the familiar 
+tool quicker.  Probably not, but humans are creatures of habit.  
 
 As time went on, most of my scripts weren't as necessary due to the corporate environment and doing more
 middle and front-end work. Typically, a package.json will contain any additional funtions that are needed
-such as kikcing off automated tests or parsing environment config files for special cases, etc.  
+such as kikcing off automated tests or parsing environment config files for special cases, etc. similar to
+Maven commands.  
+
+TODO: I will have to go back and look at my older MacBook to see what scripts I have on that.
 
 Now that I am spending more time developing on my own time and desires, I started to create my own tools
 for managing my personal Windows systems, and thought other people may appreciate some of the utilities I am 
 developing more out of the joy of coding than necessity.  So, even if you don't need any of these scripts
-I hope you at least get inspired to create some of you own, even if it is just for the joy of coding.
+I hope you at least get inspired to create some of your own, even if it is just for the joy of coding.
 
 **Happy Hacking**
 
-NOTE: In case you are newer to Python, the venv is to create a local virtual environment for
+NOTE: In case you are newer to Python, the venv is to create a local virtual environment for installing
+dependencies by project rather than globally, similar to Maven for Java or package.json for front-end.
+
 
 # Utilities:
 
