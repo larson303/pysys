@@ -8,7 +8,7 @@ language for many system administrators because it is better to know Perl than t
 all the shell utilities such as sed, grep, awk, etc.  
 
 - FYI - If you laugh at the the thought of Perl, I dare you to find a faster way to rename a variable in all
-  the subfolders than using the Perl one-liner: `perl -pi -e 's/samplefirm/newfirm/g'`
+  the subfolders from the cli than using the Perl one-liner: `perl -pi -e 's/samplefirm/newfirm/g'`
   which I would use to create new client projects from a project template and then recursively search and
   replace the with the new client project name.
 
