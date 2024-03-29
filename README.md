@@ -1,25 +1,34 @@
-# Pysys Python System Utilities
+# Pysys: Python System Utilities
 
-As a long time BASH/SHELL user, I frequently would create shell scripts and add them to my repo of tools.
-I early on grew weary of noticing that I *should* switch to Perl or Python (no mocking please) because
-both tools allow the developer/system developer to use actual code and create a framework. One of my 
-earliest code commits after my .bashrc was a script for logging.  As I moved from Operations to
-Development (but was also the Dev Server Admin) I wanted to move to more mature solutions to problems, 
-but time and deadlines seemed to make jumping in with the familiar tool easier.  
+As a long time BASH/SHELL user, I would create shell scripts and add them to a repo of my tools.
+Early on, I grew weary of noticing that I *should* switch to Perl or Python (no mocking please) because
+both languages allow the developer/system developer to use actual code and create a framework with logging
+and all the benefits of an actual language.  E.g. Even Perl* used to be (occassionally still is) the go to
+language for many system administrators because it is better to know Perl than trying to tie together
+all the shell utilities such as sed, grep, awk, etc.  
 
-As time went on, most of my scripts weren't as necessary due to the corporate environment, package.json
-that could house any node scripts for applications, and most of the work either done in the cloud rather
-than on a dev Linux server or on a local MacOS.  
+- FYI - If you laugh at the the thought of Perl, I dare you to find a faster way to rename a variable in all
+  the subfolders than using the Perl one-liner: `perl -pi -e 's/samplefirm/newfirm/g'`
+  which I would use to create new client projects from a project template and then recursively search and
+  replace the with the new client project name.
+
+One of my earliest code commits after my .bashrc was a sample for adding scripting to my shell scripts,
+and it would just build.  As I moved from Operations to Development (but was also the Dev Server Admin) 
+I wanted to move to more mature solutions to problems, but time and deadlines seemed to make jumping in 
+with the familiar tool easier.  
+
+As time went on, most of my scripts weren't as necessary due to the corporate environment and doing more
+middle and front-end work. Typically, a package.json will contain any additional funtions that are needed
+such as kikcing off automated tests or parsing environment config files for special cases, etc.  
 
 Now that I am spending more time developing on my own time and desires, I started to create my own tools
-for managing my Windows systems, and thought other people may appreciate some of the utilities I am 
-developing.  Maybe it's just my ADHD, but it doesn't seem uncommon for developers to have a 1-2TB HD
-as well as a couple of external 2TB+ drives for back up.  For me, I copied files to my backups over
-time - despite the fact I may have switched laptops or 're-organized` so ended up with duplicate files
-along the way.  Dealing with multiple versions of folders with pictures and videos, I made my move (finally)
-to switch to using Python for sys admin tasks - even if it is just for my local system.
+for managing my personal Windows systems, and thought other people may appreciate some of the utilities I am 
+developing more out of the joy of coding than necessity.  So, even if you don't need any of these scripts
+I hope you at least get inspired to create some of you own, even if it is just for the joy of coding.
 
+**Happy Hacking**
 
+NOTE: In case you are newer to Python, the venv is to create a local virtual environment for
 
 # Utilities:
 
@@ -77,3 +86,17 @@ version does not have.  (dos `tree /F`)
 ```
 
 ## find_dups.py
+### Usage
+```sh
+> python find_dups.py D:\Photos
+```
+
+### Use-Case
+- Maybe it's just my ADHD, but it doesn't seem uncommon for IT people to have a 1-2TB HD
+as well as a couple of external 2TB+ drives for back up.  For me, I copied files to my backups over
+time - despite the fact I may have switched laptops or "re-organized" so ended up with duplicate files
+along the way.  Dealing with multiple versions of folders with pictures and videos, I made my move (finally)
+to switch to using Python for sys admin tasks - even if it is just for my local system.  This will scan
+for duplicates by name and hash and then move the duplicates into a duplicate folder.  
+
+
